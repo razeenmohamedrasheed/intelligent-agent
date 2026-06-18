@@ -1,0 +1,25 @@
+# ─── Agent Framework ───────────────────────────────────────────
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-openai>=0.2.0          # Azure OpenAI integration
+
+# ─── RSS + Scraping ────────────────────────────────────────────
+feedparser>=6.0.11               # RSS/Atom feed parsing
+httpx>=0.27.0                    # async HTTP client
+beautifulsoup4>=4.12.0           # HTML scraping
+lxml>=5.2.0                      # fast BS4 parser backend
+
+# ─── Data Models ───────────────────────────────────────────────
+pydantic>=2.7.0                  # Article model + validation
+pydantic-settings>=2.3.0         # .env config loader
+
+# ─── Terminal UI ───────────────────────────────────────────────
+rich>=13.7.0                     # pretty terminal tables
+
+# ─── Streamlit UI (Phase 2) ────────────────────────────────────
+streamlit>=1.35.0
+
+# ─── Utilities ─────────────────────────────────────────────────
+python-dotenv>=1.0.0             # .env loader
+python-dateutil>=2.9.0           # robust date parsing
+tenacity>=8.3.0                  # retry logic for HTTP + LLM calls
