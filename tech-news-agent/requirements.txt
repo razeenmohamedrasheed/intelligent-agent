@@ -1,25 +1,27 @@
-# ─── Agent Framework ───────────────────────────────────────────
-langgraph>=0.2.0
-langchain>=0.3.0
-langchain-openai>=0.2.0          # Azure OpenAI integration
+# ─── Agent Framework ────────────────────────────────────────────
+# Pinned to 0.3.x family — compatible with langchain-community 0.3.x
+langgraph==0.3.34
+langchain==0.3.30
+langchain-openai==0.3.35
+langchain-core==0.3.72
 
-# ─── RSS + Scraping ────────────────────────────────────────────
-feedparser>=6.0.11               # RSS/Atom feed parsing
-httpx>=0.27.0                    # async HTTP client
-beautifulsoup4>=4.12.0           # HTML scraping
-lxml>=5.2.0                      # fast BS4 parser backend
+# ─── RSS + Scraping ─────────────────────────────────────────────
+feedparser==6.0.11
+httpx==0.27.0
+beautifulsoup4==4.12.3
+lxml==5.2.2
 
-# ─── Data Models ───────────────────────────────────────────────
-pydantic>=2.7.0                  # Article model + validation
-pydantic-settings>=2.3.0         # .env config loader
+# ─── Data Models ────────────────────────────────────────────────
+pydantic==2.7.4
+pydantic-settings==2.3.4
 
-# ─── Terminal UI ───────────────────────────────────────────────
-rich>=13.7.0                     # pretty terminal tables
+# ─── Terminal UI ────────────────────────────────────────────────
+rich==13.7.1
 
-# ─── Streamlit UI (Phase 2) ────────────────────────────────────
-streamlit>=1.35.0
+# ─── Streamlit UI (Phase 2) ─────────────────────────────────────
+streamlit==1.35.0
 
-# ─── Utilities ─────────────────────────────────────────────────
-python-dotenv>=1.0.0             # .env loader
-python-dateutil>=2.9.0           # robust date parsing
-tenacity>=8.3.0                  # retry logic for HTTP + LLM calls
+# ─── Utilities ──────────────────────────────────────────────────
+python-dotenv==1.0.1
+python-dateutil==2.9.0
+tenacity==8.3.0
